@@ -1,0 +1,65 @@
+input[type='file'] {
+  display: none;
+}
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.file-preview {
+  margin: 0 10px;
+}
+
+.hover-effect-cover {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  margin: 0;
+  box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.hover-effect-cover .link {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  transition: all 0.4s ease-in-out;
+  width: 90%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hover-effect-cover > div.effect-to-top {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hover-effect-cover:hover > div.effect-to-top {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hover-effect-cover div.effect-to-top {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Фон блока при наведении */
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+  transform: translate(0px, 250px) rotate(0deg); /* Направление выезжающей панели */
+}
+
+.hover-effect-cover:hover div.effect-to-top {
+  opacity: 1;
+  transform: translate(0px, 0px) rotate(0deg);
+}

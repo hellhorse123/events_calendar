@@ -1,0 +1,13 @@
+@import '~react-image-gallery/styles/css/image-gallery.css';
+body {
+  margin: 0;
+  padding-bottom: 50px;
+  max-width: 100%;
+  font-family: 'Gotham Pro';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Gotham Pro';
+}
